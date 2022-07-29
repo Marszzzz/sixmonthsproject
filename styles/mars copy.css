@@ -1,0 +1,248 @@
+.header{
+    display: flex;
+    background-color: aliceblue;
+    padding: 6px 10px;
+}
+
+.header .logo{
+    display: inline-block;
+    padding: 6px 0;
+}
+
+.header img{
+    width: 40px;
+    height: 100%;
+}
+.header a{
+    text-decoration: none;
+}
+.header nav{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-self: center;
+    line-height: 25px;
+    font-size: 0px;
+    cursor: pointer;
+}
+
+.header nav a{
+    display: inline-block;
+    padding: 10px;
+    color: blue;
+    font-size: 16px;
+}
+
+.header nav a:hover{
+    background-color: yellow;
+}
+
+.title {
+    margin: 0 auto;
+    width: 300px;
+    padding: 10px 10px;
+    font-size: 20px;
+    color: firebrick;
+}
+
+.banner img{
+    padding: 10px 200px;
+    width: 75%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.box{
+    width: 140px;
+    height: 250px;
+    border-radius: 70px;
+    float: left;
+    margin-left: 20px;
+    position: relative;
+}
+
+.path{
+    display: flex;
+}
+
+.path li{
+    position: relative;
+    padding: 6px 8px;
+}
+
+.path li a{
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.wrap{
+    width: 960px;
+    margin: auto;
+}
+
+.about{
+    display: flexbox;
+}
+
+.link nav{
+    text-align: center;
+}
+.link a{
+    text-decoration: none;
+    padding: 6px 10px;
+}
+
+
+.about img{
+    width: 100%;
+    height: 300px;
+}
+
+.about .wrap .item{
+    width: 400px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.about h2{
+    width: 100%;
+    font-size: 42px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.about h3{
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.about p{
+    font-size: 14px;
+    padding: 0px 10px;
+}
+
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.heart {
+    margin: 0 auto;
+    position: relative;
+    width: 305px;
+    height: 115px;
+}
+.heart::before, .heart::after {
+    content:"";
+    position: absolute;
+    left: 70px;
+    top: 0;
+    width: 70px;
+    height: 115px;
+    background: red;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: left bottom;
+    -moz-transform-origin: left bottom;
+    -o-transform-origin: left bottom;
+    transform-origin: left bottom;
+}
+.heart::after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: right bottom;
+    -moz-transform-origin: right bottom;
+    -o-transform-origin: right bottom;
+    transform-origin: right bottom;
+}
+.heart {
+    -webkit-animation: jump 1s infinite ease-out;
+    -moz-animation: jump 1s infinite ease-out;
+    -o-animation: jump 1s infinite ease-out;
+    animation: jump 1s infinite ease-out;
+}
+@-webkit-keyframes jump {
+    0%, 60%, 75%, 90%, 100% {
+        -webkit-transform: scale(1);
+    }
+    15% {
+        -webkit-transform: scale(0.6);
+    }
+    30% {
+        -webkit-transform: scale(1);
+    }
+    45% {
+        -webkit-transform: scale(0.7);
+    }
+}
+@-moz-keyframes jump {
+    0%, 60%, 75%, 90%, 100% {
+        -moz-transform: scale(1);
+    }
+    15% {
+        -moz-transform: scale(0.6);
+    }
+    30% {
+        -moz-transform: scale(1);
+    }
+    45% {
+        -moz-transform: scale(0.7);
+    }
+}
+@-o-keyframes jump {
+    0%, 60%, 75%, 90%, 100% {
+        -o-transform: scale(1);
+    }
+    15% {
+        -o-transform: scale(0.6);
+    }
+    30% {
+        -o-transform: scale(1);
+    }
+    45% {
+        -o-transform: scale(0.7);
+    }
+}
+@keyframes jump {
+    0%, 60%, 75%, 90%, 100% {
+        transform: scale(1);
+    }
+    15% {
+        transform: scale(0.6);
+    }
+    30% {
+        transform: scale(1);
+    }
+    45% {
+        transform: scale(0.7);
+    }
+}
+.blue-heart {
+    width: 100px;
+    height: 70px;
+    position: absolute;
+    left: 250px;
+    top: 50px;
+}
+.blue-heart::before {
+    left: 50px;
+}
+.blue-heart::before, .blue-heart::after {
+    width: 50px;
+    height: 70px;
+    background: blue;
+    border-radius: 25px 25px 0 0;
+}
+.blue-heart {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    -o-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}

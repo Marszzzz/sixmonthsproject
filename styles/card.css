@@ -1,0 +1,72 @@
+.container {
+    display: flex;
+   justify-content: space-around;
+}
+
+.card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 400px;
+    padding: 10px 200px;
+    border-radius: 10px;
+    background: linear-gradient(150deg, black, gold, black);
+    box-shadow: 0 0 20px 1px Gray;
+    transition: .3s;
+}
+
+.card-title {
+    color: white;
+    text-align: center;
+    line-height: 2;
+    font-size: 30px;
+    text-shadow: 0 0 2px Lightgray;
+}
+
+.card-txt {
+    color: WhiteSmoke;
+    height: 80%;
+    width: 450%;
+    font-size: 20px;
+    line-height: 32px;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all .3s;
+    display: none;
+    transform: rotateY(180deg)
+}
+
+.card:hover .card-title {
+    text-shadow: 1px 1px 5px DimGray;
+    display: none;
+}
+
+.card:hover .card-txt {
+    height: 80%;
+    opacity: 1;
+    overflow: auto;
+    display: block;
+    transform: rotateY(180deg)
+    animation: fadeIn .3s;
+    animation-delay: .2s;
+    animation-fill-mode: backwards;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px) rotateY(180deg);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) rotateY(180deg)
+    }
+  }
